@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:isolation-transformer-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 3
+Sheet 3 3
 Title ""
 Date ""
 Rev ""
@@ -1042,10 +1042,6 @@ F 3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" H 2850 4300 50  0001 C CNN
 	1    2850 4300
 	1    0    0    -1  
 $EndComp
-Text Label 9650 2150 0    50   ~ 0
-230V_L
-Text Label 5600 5800 1    50   ~ 0
-230V_L
 Text Label 4300 6550 0    50   ~ 0
 RELAY_2
 Text Label 4300 7200 0    50   ~ 0
@@ -1066,42 +1062,6 @@ Text Label 1700 6750 0    50   ~ 0
 ON_DELAY
 Text Label 3450 4100 0    50   ~ 0
 ON_DELAY
-Text Label 9650 1450 0    50   ~ 0
-230V_N
-Text Label 10250 5800 1    50   ~ 0
-230V_N
-Text Label 9650 1150 0    50   ~ 0
-115V_2_N
-Text Label 10450 5800 1    50   ~ 0
-115V_2_N
-Text Label 9600 5800 1    50   ~ 0
-W8
-Text Label 9650 1250 0    50   ~ 0
-W8
-Text Label 9650 1550 0    50   ~ 0
-W7
-Text Label 9650 2050 0    50   ~ 0
-W6
-Text Label 9650 2350 0    50   ~ 0
-W5
-Text Label 8450 5800 1    50   ~ 0
-W7
-Text Label 6400 5800 1    50   ~ 0
-W6
-Text Label 4950 5800 1    50   ~ 0
-W5
-Text Label 9150 5800 1    50   ~ 0
-115V_2_L
-Text Label 9650 1750 0    50   ~ 0
-115V_2_L
-Text Label 7100 5800 1    50   ~ 0
-115V_1_N
-Text Label 9650 1850 0    50   ~ 0
-115V_1_N
-Text Label 5800 5800 1    50   ~ 0
-115V_1_L
-Text Label 9650 2450 0    50   ~ 0
-115V_1_L
 $Comp
 L power:GND #PWR0124
 U 1 1 5C1B04C1
@@ -1113,10 +1073,6 @@ F 3 "" H 10200 850 50  0001 C CNN
 	1    10200 850 
 	0    1    -1   0   
 $EndComp
-Text Label 9650 950  0    50   ~ 0
-MODE_SW
-Text Label 2250 1900 2    50   ~ 0
-MODE_SW
 Wire Wire Line
 	10200 950  9650 950 
 $Comp
@@ -1141,4 +1097,96 @@ F 3 "" H 8250 2350 50  0001 C CNN
 	1    8250 2350
 	0    1    1    0   
 $EndComp
+Entry Wire Line
+	4950 5800 5050 5900
+Entry Wire Line
+	5600 5800 5700 5900
+Entry Wire Line
+	5800 5800 5900 5900
+Entry Wire Line
+	6400 5800 6500 5900
+Entry Wire Line
+	7100 5800 7200 5900
+Entry Wire Line
+	8450 5800 8550 5900
+Entry Wire Line
+	9150 5800 9250 5900
+Entry Wire Line
+	9600 5800 9700 5900
+Entry Wire Line
+	10250 5800 10350 5900
+Entry Wire Line
+	10450 5800 10550 5900
+Entry Wire Line
+	9550 2550 9650 2450
+Entry Wire Line
+	9550 2450 9650 2350
+Entry Wire Line
+	9550 2250 9650 2150
+Entry Wire Line
+	9550 2150 9650 2050
+Entry Wire Line
+	9550 1950 9650 1850
+Entry Wire Line
+	9550 1850 9650 1750
+Entry Wire Line
+	9550 1650 9650 1550
+Entry Wire Line
+	9550 1550 9650 1450
+Entry Wire Line
+	9550 1350 9650 1250
+Entry Wire Line
+	9550 1250 9650 1150
+Wire Bus Line
+	9550 3050 10950 3050
+Wire Bus Line
+	10950 3050 10950 5900
+Text HLabel 9650 950  0    50   Input ~ 0
+MODE_SW
+Text HLabel 2250 1900 0    50   Input ~ 0
+MODE_SW
+Text HLabel 9650 1150 0    50   Input ~ 0
+115V_2_N
+Text HLabel 9650 1250 0    50   Input ~ 0
+W8
+Text HLabel 9650 1450 0    50   Input ~ 0
+230V_N
+Text HLabel 9650 1550 0    50   Input ~ 0
+W7
+Text HLabel 9650 1750 0    50   Input ~ 0
+115V_2_L
+Text HLabel 9650 1850 0    50   Input ~ 0
+115V_1_N
+Text HLabel 9650 2050 0    50   Input ~ 0
+W6
+Text HLabel 9650 2150 0    50   Input ~ 0
+230V_L
+Text HLabel 9650 2350 0    50   Input ~ 0
+W5
+Text HLabel 9650 2450 0    50   Input ~ 0
+115V_1_L
+Text HLabel 10450 5800 1    50   Input ~ 0
+115V_2_N
+Text HLabel 10250 5800 1    50   Input ~ 0
+230V_N
+Text HLabel 9600 5800 1    50   Input ~ 0
+W8
+Text HLabel 9150 5800 1    50   Input ~ 0
+115V_2_L
+Text HLabel 8450 5800 1    50   Input ~ 0
+W7
+Text HLabel 7100 5800 1    50   Input ~ 0
+115V_1_N
+Text HLabel 6400 5800 1    50   Input ~ 0
+W6
+Text HLabel 5800 5800 1    50   Input ~ 0
+115V_1_L
+Text HLabel 5600 5800 1    50   Input ~ 0
+230V_L
+Text HLabel 4950 5800 1    50   Input ~ 0
+W5
+Wire Bus Line
+	5050 5900 10950 5900
+Wire Bus Line
+	9550 1250 9550 3050
 $EndSCHEMATC

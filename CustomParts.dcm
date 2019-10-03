@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP EMI_Filter_LL_CCC
+D EMI 2-inductor 3-capacitor filter, pin-connections 1-4 and 2-3
+K EMI filter common-mode choke
+F ~
+$ENDCMP
+#
+$CMP SW_DPDT_x2_MSM
+D Switch, dual pole double throw, separate symbols
+K switch dual-pole double-throw DPDT spdt ON-ON
+F ~
+$ENDCMP
+#
+#End Doc Library

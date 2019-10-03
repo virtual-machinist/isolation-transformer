@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
 LIBS:isolation-transformer-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 3 3
+Sheet 2 3
 Title ""
 Date ""
 Rev ""
@@ -204,10 +204,6 @@ F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 5150 2850
 	1    5150 2600
 	1    0    0    -1  
 $EndComp
-Text Label 5550 3400 1    50   ~ 0
-PWR_1
-Text Label 6950 3400 1    50   ~ 0
-PWR_2
 Wire Wire Line
 	8550 1600 8000 1600
 Wire Wire Line
@@ -258,10 +254,6 @@ F 3 "~" H 8750 1500 50  0001 C CNN
 	1    8750 1500
 	1    0    0    -1  
 $EndComp
-Text Label 8000 1500 0    50   ~ 0
-BALLAST_2
-Text Label 8000 1600 0    50   ~ 0
-PWR_2
 Wire Wire Line
 	8550 1300 8000 1300
 Wire Wire Line
@@ -277,10 +269,6 @@ F 3 "~" H 8750 1200 50  0001 C CNN
 	1    8750 1200
 	1    0    0    -1  
 $EndComp
-Text Label 8000 1200 0    50   ~ 0
-PWR_1
-Text Label 8000 1300 0    50   ~ 0
-BALLAST_1
 Connection ~ 3550 1750
 $Comp
 L power:+12V #PWR0132
@@ -532,10 +520,6 @@ F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 6400 2850
 	1    6400 2600
 	1    0    0    -1  
 $EndComp
-Text Label 6100 3400 1    50   ~ 0
-BALLAST_1
-Text Label 6800 3400 1    50   ~ 0
-BALLAST_2
 Text Label 6050 1850 1    50   ~ 0
 BALLAST_RELAY
 NoConn ~ 6700 2500
@@ -632,9 +616,47 @@ $EndComp
 Connection ~ 5550 2800
 Wire Wire Line
 	4850 2600 4850 2800
-Text Label 4850 3400 1    50   ~ 0
-BALLAST_1
 Connection ~ 4850 2800
 Wire Wire Line
 	4850 2800 4850 3400
+Entry Wire Line
+	4850 3400 4950 3500
+Entry Wire Line
+	5550 3400 5650 3500
+Entry Wire Line
+	6100 3400 6200 3500
+Entry Wire Line
+	6800 3400 6900 3500
+Entry Wire Line
+	6950 3400 7050 3500
+Entry Wire Line
+	7900 1300 8000 1200
+Entry Wire Line
+	7900 1400 8000 1300
+Entry Wire Line
+	7900 1600 8000 1500
+Entry Wire Line
+	7900 1700 8000 1600
+Text HLabel 8000 1200 0    50   Input ~ 0
+PWR_1
+Text HLabel 8000 1300 0    50   Input ~ 0
+BALLAST_1
+Text HLabel 8000 1500 0    50   Input ~ 0
+BALLAST_2
+Text HLabel 8000 1600 0    50   Input ~ 0
+PWR_2
+Text HLabel 5550 3400 1    50   Input ~ 0
+PWR_1
+Text HLabel 6100 3400 1    50   Input ~ 0
+BALLAST_1
+Text HLabel 6800 3400 1    50   Input ~ 0
+BALLAST_2
+Text HLabel 6950 3400 1    50   Input ~ 0
+PWR_2
+Text HLabel 4850 3400 1    50   Input ~ 0
+BALLAST_1
+Wire Bus Line
+	4950 3500 7900 3500
+Wire Bus Line
+	7900 1300 7900 3500
 $EndSCHEMATC
