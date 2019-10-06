@@ -208,23 +208,23 @@ Wire Wire Line
 Wire Wire Line
 	10200 1450 9650 1450
 Wire Wire Line
-	5800 5200 5800 5800
+	5800 5300 5800 5950
 Wire Wire Line
-	5600 5100 5600 5800
+	5600 5100 5600 5950
 Wire Wire Line
-	10450 5200 10450 5800
+	10450 5300 10450 5950
 Wire Wire Line
-	10250 5800 10250 5100
+	10250 5950 10250 5100
 Wire Wire Line
-	9150 5200 9150 5800
+	9150 5300 9150 5950
 Wire Wire Line
-	7100 5200 7100 5800
+	7100 5300 7100 5950
 Wire Wire Line
-	9100 5400 9100 5100
+	9100 5500 9100 5100
 Wire Wire Line
-	7050 5400 9100 5400
+	7050 5500 9100 5500
 Wire Wire Line
-	7050 5100 7050 5400
+	7050 5100 7050 5500
 Wire Wire Line
 	7650 4800 7650 4850
 Wire Wire Line
@@ -519,21 +519,21 @@ Wire Wire Line
 Wire Wire Line
 	6150 4850 6150 4800
 Wire Wire Line
-	10300 5200 10450 5200
+	10300 5300 10450 5300
+Wire Wire Line
+	10200 5300 10300 5300
+Connection ~ 10300 5300
+Wire Wire Line
+	10300 5200 10300 5300
 Wire Wire Line
 	10200 5200 10300 5200
-Connection ~ 10300 5200
-Wire Wire Line
-	10300 5000 10300 5200
-Wire Wire Line
-	10200 5000 10300 5000
 Wire Wire Line
 	10250 5100 10200 5100
 Connection ~ 10250 5100
 Wire Wire Line
-	10250 4900 10250 5100
+	10250 5000 10250 5100
 Wire Wire Line
-	10200 4900 10250 4900
+	10200 5000 10250 5000
 $Comp
 L power:+12V #PWR0115
 U 1 1 5BF831A1
@@ -609,36 +609,31 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 9900 4350 50  0001 C CNN
 	1    9900 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	9600 5200 9600 5800
-Wire Wire Line
-	9600 5000 9600 5200
-Connection ~ 9600 5200
 $Comp
-L Relay:Fujitsu_FTR-F1C K4
+L CustomParts:Omron_G2R-1-E K4
 U 1 1 5BF83174
 P 9900 5000
-F 0 "K4" H 9900 5517 50  0000 C CNN
-F 1 "Fujitsu_FTR-F1C" H 9900 5426 50  0000 C CNN
-F 2 "Relay_THT:Relay_DPDT_Fujitsu_FTR-F1C" H 9850 4600 50  0001 C CNN
-F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 9900 5250 50  0001 C CNN
+F 0 "K4" V 9350 5000 50  0000 C CNN
+F 1 "G2R-1-E-12VDC" V 9450 5000 50  0000 C CNN
+F 2 "CustomParts:Relay_SPDT_Omron_G2R-1-E" H 9850 4600 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2r.pdf" H 9900 5250 50  0001 C CNN
 	1    9900 5000
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 Wire Wire Line
-	9150 5200 9050 5200
-Connection ~ 9150 5200
+	9150 5300 9050 5300
+Connection ~ 9150 5300
 Wire Wire Line
-	9150 5000 9150 5200
+	9150 5200 9150 5300
 Wire Wire Line
-	9050 5000 9150 5000
+	9050 5200 9150 5200
 Wire Wire Line
 	9100 5100 9050 5100
 Connection ~ 9100 5100
 Wire Wire Line
-	9100 4900 9100 5100
+	9100 5000 9100 5100
 Wire Wire Line
-	9050 4900 9100 4900
+	9050 5000 9100 5000
 $Comp
 L power:+12V #PWR0113
 U 1 1 5BF78CC6
@@ -707,51 +702,26 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 8750 4350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	8450 5200 8450 5800
-Wire Wire Line
-	8450 5000 8450 5200
-Connection ~ 8450 5200
-$Comp
-L Relay:Fujitsu_FTR-F1C K3
-U 1 1 5BF78C99
-P 8750 5000
-F 0 "K3" H 8750 5500 50  0000 C CNN
-F 1 "Fujitsu_FTR-F1C" H 8750 5426 50  0000 C CNN
-F 2 "Relay_THT:Relay_DPDT_Fujitsu_FTR-F1C" H 8700 4600 50  0001 C CNN
-F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 8750 5250 50  0001 C CNN
-	1    8750 5000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	7100 5200 7000 5200
-Connection ~ 7100 5200
-Wire Wire Line
-	7100 5000 7100 5200
-Wire Wire Line
-	7000 5000 7100 5000
+	7100 5300 7000 5300
+Connection ~ 7100 5300
 Wire Wire Line
 	7050 5100 7000 5100
 Connection ~ 7050 5100
 Wire Wire Line
-	7050 4900 7050 5100
+	7050 5000 7050 5100
 Wire Wire Line
-	7000 4900 7050 4900
+	7000 5000 7050 5000
 Wire Wire Line
-	5650 5200 5800 5200
+	5550 5300 5800 5300
 Wire Wire Line
-	5550 5200 5650 5200
-Connection ~ 5650 5200
-Wire Wire Line
-	5650 5000 5650 5200
-Wire Wire Line
-	5550 5000 5650 5000
+	5550 5200 5550 5300
 Wire Wire Line
 	5600 5100 5550 5100
 Connection ~ 5600 5100
 Wire Wire Line
-	5600 4900 5600 5100
+	5600 5000 5600 5100
 Wire Wire Line
-	5550 4900 5600 4900
+	5550 5000 5600 5000
 $Comp
 L power:+12V #PWR0111
 U 1 1 5BF69757
@@ -867,37 +837,27 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6700 4350 50  0001 C CNN
 	1    6700 4350
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 5200 4950 5800
-Wire Wire Line
-	4950 5000 4950 5200
-Connection ~ 4950 5200
 $Comp
-L Relay:Fujitsu_FTR-F1C K1
+L CustomParts:Omron_G2R-1-E K1
 U 1 1 5BF5681F
 P 5250 5000
-F 0 "K1" H 5250 5517 50  0000 C CNN
-F 1 "Fujitsu_FTR-F1C" H 5250 5426 50  0000 C CNN
-F 2 "Relay_THT:Relay_DPDT_Fujitsu_FTR-F1C" H 5200 4600 50  0001 C CNN
-F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 5250 5250 50  0001 C CNN
+F 0 "K1" V 4700 5000 50  0000 C CNN
+F 1 "G2R-1-E-12VDC" V 4800 5000 50  0000 C CNN
+F 2 "CustomParts:Relay_SPDT_Omron_G2R-1-E" H 5200 4600 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2r.pdf" H 5250 5250 50  0001 C CNN
 	1    5250 5000
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
-Wire Wire Line
-	6400 5200 6400 5800
-Wire Wire Line
-	6400 5200 6400 5000
-Connection ~ 6400 5200
 $Comp
-L Relay:Fujitsu_FTR-F1C K2
+L CustomParts:Omron_G2R-1-E K2
 U 1 1 5BF56678
 P 6700 5000
-F 0 "K2" H 6700 5517 50  0000 C CNN
-F 1 "Fujitsu_FTR-F1C" H 6700 5426 50  0000 C CNN
-F 2 "Relay_THT:Relay_DPDT_Fujitsu_FTR-F1C" H 6650 4600 50  0001 C CNN
-F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 6700 5250 50  0001 C CNN
+F 0 "K2" V 6150 5000 50  0000 C CNN
+F 1 "G2R-1-E-12VDC" V 6250 5000 50  0000 C CNN
+F 2 "CustomParts:Relay_SPDT_Omron_G2R-1-E" H 6650 4600 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2r.pdf" H 6700 5250 50  0001 C CNN
 	1    6700 5000
-	1    0    0    -1  
+	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR0107
@@ -1098,25 +1058,25 @@ F 3 "" H 8250 2350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Entry Wire Line
-	4950 5800 5050 5900
+	4950 5950 5050 6050
 Entry Wire Line
-	5600 5800 5700 5900
+	5600 5950 5700 6050
 Entry Wire Line
-	5800 5800 5900 5900
+	5800 5950 5900 6050
 Entry Wire Line
-	6400 5800 6500 5900
+	6400 5950 6500 6050
 Entry Wire Line
-	7100 5800 7200 5900
+	7100 5950 7200 6050
 Entry Wire Line
-	8450 5800 8550 5900
+	8450 5950 8550 6050
 Entry Wire Line
-	9150 5800 9250 5900
+	9150 5950 9250 6050
 Entry Wire Line
-	9600 5800 9700 5900
+	9600 5950 9700 6050
 Entry Wire Line
-	10250 5800 10350 5900
+	10250 5950 10350 6050
 Entry Wire Line
-	10450 5800 10550 5900
+	10450 5950 10550 6050
 Entry Wire Line
 	9550 2550 9650 2450
 Entry Wire Line
@@ -1140,7 +1100,7 @@ Entry Wire Line
 Wire Bus Line
 	9550 3050 10950 3050
 Wire Bus Line
-	10950 3050 10950 5900
+	10950 3050 10950 6050
 Text HLabel 9650 950  0    50   Input ~ 0
 MODE_SW
 Text HLabel 2250 1900 0    50   Input ~ 0
@@ -1165,28 +1125,64 @@ Text HLabel 9650 2350 0    50   Input ~ 0
 W5
 Text HLabel 9650 2450 0    50   Input ~ 0
 115V_1_L
-Text HLabel 10450 5800 1    50   Input ~ 0
+Text HLabel 10450 5950 1    50   Input ~ 0
 115V_2_N
-Text HLabel 10250 5800 1    50   Input ~ 0
+Text HLabel 10250 5950 1    50   Input ~ 0
 230V_N
-Text HLabel 9600 5800 1    50   Input ~ 0
+Text HLabel 9600 5950 1    50   Input ~ 0
 W8
-Text HLabel 9150 5800 1    50   Input ~ 0
+Text HLabel 9150 5950 1    50   Input ~ 0
 115V_2_L
-Text HLabel 8450 5800 1    50   Input ~ 0
+Text HLabel 8450 5950 1    50   Input ~ 0
 W7
-Text HLabel 7100 5800 1    50   Input ~ 0
+Text HLabel 7100 5950 1    50   Input ~ 0
 115V_1_N
-Text HLabel 6400 5800 1    50   Input ~ 0
+Text HLabel 6400 5950 1    50   Input ~ 0
 W6
-Text HLabel 5800 5800 1    50   Input ~ 0
+Text HLabel 5800 5950 1    50   Input ~ 0
 115V_1_L
-Text HLabel 5600 5800 1    50   Input ~ 0
+Text HLabel 5600 5950 1    50   Input ~ 0
 230V_L
-Text HLabel 4950 5800 1    50   Input ~ 0
+Text HLabel 4950 5950 1    50   Input ~ 0
 W5
+Wire Wire Line
+	4950 5200 4950 5300
+Connection ~ 4950 5300
+Wire Wire Line
+	4950 5300 4950 5950
+Connection ~ 5550 5300
+Wire Wire Line
+	6400 5200 6400 5300
+Connection ~ 6400 5300
+Wire Wire Line
+	6400 5300 6400 5950
+Wire Wire Line
+	7100 5200 7100 5300
+Wire Wire Line
+	7000 5200 7100 5200
+Wire Wire Line
+	8450 5200 8450 5300
+$Comp
+L CustomParts:Omron_G2R-1-E K3
+U 1 1 5BF78C99
+P 8750 5000
+F 0 "K3" V 8200 5000 50  0000 C CNN
+F 1 "G2R-1-E-12VDC" V 8300 5000 50  0000 C CNN
+F 2 "CustomParts:Relay_SPDT_Omron_G2R-1-E" H 8700 4600 50  0001 C CNN
+F 3 "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g2r.pdf" H 8750 5250 50  0001 C CNN
+	1    8750 5000
+	0    1    1    0   
+$EndComp
+Connection ~ 8450 5300
+Wire Wire Line
+	8450 5300 8450 5950
+Wire Wire Line
+	9600 5200 9600 5300
+Connection ~ 9600 5300
+Wire Wire Line
+	9600 5300 9600 5950
 Wire Bus Line
-	5050 5900 10950 5900
+	5050 6050 10950 6050
 Wire Bus Line
 	9550 1250 9550 3050
 $EndSCHEMATC

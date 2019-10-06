@@ -117,9 +117,9 @@ Wire Wire Line
 Wire Wire Line
 	5450 2800 5550 2800
 Wire Wire Line
-	5550 2600 5550 2800
+	5550 2700 5550 2800
 Wire Wire Line
-	5450 2600 5550 2600
+	5450 2700 5550 2700
 $Comp
 L power:+12V #PWR?
 U 1 1 5C109378
@@ -192,15 +192,15 @@ $EndComp
 Wire Wire Line
 	5550 2800 5550 3400
 $Comp
-L Relay:Fujitsu_FTR-F1C K?
+L CustomParts:Fujitsu_FTR-K1C K?
 U 1 1 5C1093A7
 P 5150 2600
 AR Path="/5C0DA8AE/5C1093A7" Ref="K?"  Part="1" 
 AR Path="/5C1079DA/5C1093A7" Ref="K5"  Part="1" 
 F 0 "K5" H 5150 3117 50  0000 C CNN
-F 1 "Fujitsu_FTR-F1C" H 5150 3026 50  0000 C CNN
-F 2 "Relay_THT:Relay_DPDT_Fujitsu_FTR-F1C" H 5100 2200 50  0001 C CNN
-F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 5150 2850 50  0001 C CNN
+F 1 "FTR-K1CK012W" H 5150 3026 50  0000 C CNN
+F 2 "CustomParts:Relay_SPDT_Fujitsu_FTR-K1C" H 5100 2200 50  0001 C CNN
+F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-k1.pdf" H 5150 2850 50  0001 C CNN
 	1    5150 2600
 	1    0    0    -1  
 $EndComp
@@ -450,15 +450,15 @@ BALLAST_RELAY
 Text Label 5500 1850 1    50   ~ 0
 ON_RELAY
 NoConn ~ 5450 2500
-NoConn ~ 5450 2700
+NoConn ~ 5450 2600
 Wire Wire Line
 	6800 2800 6800 3400
 Wire Wire Line
 	6700 2800 6800 2800
 Wire Wire Line
-	6800 2600 6800 2800
+	6800 2700 6800 2800
 Wire Wire Line
-	6700 2600 6800 2600
+	6700 2700 6800 2700
 $Comp
 L power:+12V #PWR?
 U 1 1 5C12A4A8
@@ -503,27 +503,25 @@ F 3 "http://www.vishay.com/docs/88503/1n4001.pdf" H 6400 1950 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	6100 2800 6100 3400
-Wire Wire Line
-	6100 2600 6100 2800
-Connection ~ 6100 2800
+	6100 2600 6100 2700
+Connection ~ 6100 2700
 $Comp
-L Relay:Fujitsu_FTR-F1C K?
+L CustomParts:Fujitsu_FTR-K1C K?
 U 1 1 5C12A4C1
 P 6400 2600
 AR Path="/5C0DA8AE/5C12A4C1" Ref="K?"  Part="1" 
 AR Path="/5C1079DA/5C12A4C1" Ref="K6"  Part="1" 
 F 0 "K6" H 6400 3117 50  0000 C CNN
-F 1 "Fujitsu_FTR-F1C" H 6400 3026 50  0000 C CNN
-F 2 "Relay_THT:Relay_DPDT_Fujitsu_FTR-F1C" H 6350 2200 50  0001 C CNN
-F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-f1.pdf" H 6400 2850 50  0001 C CNN
+F 1 "FTR-K1CK012W" H 6400 3026 50  0000 C CNN
+F 2 "CustomParts:Relay_SPDT_Fujitsu_FTR-K1C" H 6350 2200 50  0001 C CNN
+F 3 "https://www.fujitsu.com/downloads/MICRO/fcai/relays/ftr-k1.pdf" H 6400 2850 50  0001 C CNN
 	1    6400 2600
 	1    0    0    -1  
 $EndComp
 Text Label 6050 1850 1    50   ~ 0
 BALLAST_RELAY
 NoConn ~ 6700 2500
-NoConn ~ 6700 2700
+NoConn ~ 6700 2600
 Connection ~ 6800 2800
 Wire Wire Line
 	5500 1950 5500 1850
@@ -615,10 +613,8 @@ F 3 "~" H 8750 2100 50  0001 C CNN
 $EndComp
 Connection ~ 5550 2800
 Wire Wire Line
-	4850 2600 4850 2800
-Connection ~ 4850 2800
-Wire Wire Line
-	4850 2800 4850 3400
+	4850 2600 4850 2700
+Connection ~ 4850 2700
 Entry Wire Line
 	4850 3400 4950 3500
 Entry Wire Line
@@ -655,6 +651,10 @@ Text HLabel 6950 3400 1    50   Input ~ 0
 PWR_2
 Text HLabel 4850 3400 1    50   Input ~ 0
 BALLAST_1
+Wire Wire Line
+	4850 2700 4850 3400
+Wire Wire Line
+	6100 2700 6100 3400
 Wire Bus Line
 	4950 3500 7900 3500
 Wire Bus Line

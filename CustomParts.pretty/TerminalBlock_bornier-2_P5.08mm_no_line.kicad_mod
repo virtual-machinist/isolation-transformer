@@ -1,7 +1,7 @@
 (module TerminalBlock_bornier-2_P5.08mm_no_line (layer F.Cu) (tedit 5C159104)
   (descr "simple 2-pin terminal block, pitch 5.08mm, revamped version of bornier2")
   (tags "terminal block bornier2")
-  (fp_text reference J7 (at 2.54 -5.08) (layer F.SilkS)
+  (fp_text reference REF** (at 2.54 -5.08) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (fp_text value PWR (at 2.54 5.08) (layer F.Fab)
