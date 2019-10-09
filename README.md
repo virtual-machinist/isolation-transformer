@@ -57,7 +57,7 @@ The simplest soft-start circuit consists of a negative temperature coefficient (
 
 However an NTC doesn't cool down instantaneously after being turned off and thus cannot limit current if the load is turned on instantaneously. This isn't a big issue for SMPS, as capacitors do not instantaneously discharge either, but can be a problem for inductive loads.
 
-This is why a more complex circuit has to be used for transformers that "emulates" the behavior of an NTC - a resistor in parallel with a normally closed relay is connected in series with the transformer. After a small delay enough to stabilize the current the relay shorts the resistor. This type of circuit is used for example in microwave ovens.
+This is why a more complex circuit has to be used for transformers that "emulates" the behavior of an NTC - a resistor in parallel with a normally opened relay is connected in series with the transformer. After a small delay enough to stabilize the current the relay closes, shorting the resistor. This type of circuit is used for example in microwave ovens.
 
 We would also want the load of the transformer to be disconnected before the soft-start circuit has finished its sequence. This way the load will not try to start operating with sub-mains voltage and limited current.
 
