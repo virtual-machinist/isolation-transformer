@@ -35,6 +35,7 @@ This takes considerably less time than it used to. The EDA helps to avoid dumb m
 ## Purpose
 
 You would want to use an isolation transformer if you:
+
 * Repair mains stuff.
 * Design mains stuff.
 * Use vintage stuff on tubes without proper galvanic isolation.
@@ -66,6 +67,8 @@ We would also want the load of the transformer to be disconnected before the sof
 Here are some notes about the parts used for this project. Not all parts are listed here, not all parts were bought especially for this project. My goal was to reuse as much as possible surplus parts from previous endeavors.
 
 * Enclosure - SZOMK AK40023. Dimensions: 250x150x300 mm. Was probably the hardest part to get for this project. There's many cheap but smaller boxes available on eBay/AliExpress, but anything that would fit the transformer + give a few cm of space for control circuitry and outlets cost insane money (three-digit figures, not kidding). Luckily bought this one directly from the manufacturer for ~$50 + shipping.
+
+* PCBs were ordered from JLCPCB in a batch of 5 for ~$40 including shipping. Although they charged me extra for 2oz copper and having "two designs" per set of gerbers, the price is still very competitive.
 
 * `TR1` - Main transformer. A custom 2600 VA toroidal transformer ordered especially for this project from a reputable local manufacturer for ~$220. Has four windings - two primary and two secondary. Each winding is done using 125 turns of 3x1.32mm enameled copper wire (thus, primary and secondary sides have 250 turns each).  
 Net weight of transformer core alone is ~10kg, net weight of copper used is ~5kg. Transformer total weight is 15.5kg.  
@@ -122,6 +125,9 @@ You can open the [schematic](Images/isolation-transformer.sch.pdf) for better un
     * if `SW2` is off, 230V mode is selected. `K2` is deactivated, output `J12` becomes live, `NE1` lights up.
 
 ## Photos
+
+PCBs from JLCPCB:
+![PCBs](Images/pcbs.jpg)
 
 Back panel close-up during final testing and assembly:
 ![Back panel mid-assembly](Images/mid_assembly_1.jpg)
