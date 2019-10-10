@@ -85,7 +85,7 @@ May in theory provide ~3 kVA output power if properly cooled.
 
 * `K1`..`K4` relays sit on a relay socket, `K5` and `K6` are directly soldered to the PCB.
 
-* `U3` is not actually LM7805, but a pin-compatible 5V buck regulator for increased efficiency. Bought as a pack of 10 for ~$15 + shipping from AliExpress.
+* `U3` is a 5V buck regulator pin-compatible with LM7805. Used for increased efficiency. Bought as a pack of 10 for ~$15 + shipping from AliExpress.
 
 * `U4` is actually К155ЛА3, a Soviet pin-compatible 7400 replacement.
 
@@ -98,10 +98,12 @@ May in theory provide ~3 kVA output power if properly cooled.
 * `SW2` and `SW3` tested and salvaged from disassembled devices.  
 Although `SW3` could be beefier (or control a separate 16A relay) the primary function of this device is galvanic isolation, i.e. floating ground, not mains conditioning. Besides that there is a rather short path to chassis from the outlets, so probably not a problem anyway.
 
-* High-current wiring done with EN 50525-2-31 insulated 6mm2 multi-strand copper wire bought especially for this project. Low-current wiring done with 1.5mm2 multi-strand copper wire leftovers.  
+* High-current wiring done with EN 50525-2-31 insulated 6mm2 multi-strand copper wire bought especially for this project. Low-current wiring done with 0.75-1.5mm2 multi-strand copper wire leftovers.  
 All wires were crimped untinned with either spade connectors or ferrules to avoid insulation damage due to heat.
 
 ## Operation Mode
+
+You can open the [schematic](Images/isolation-transformer.sch.pdf) for better understanding.
 
 1. Normally `SW1` is in middle position and the device is off.
 
