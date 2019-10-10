@@ -53,10 +53,10 @@ F 3 "" H 5400 3800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:Fuse F1
+L Device:Fuse F2
 U 1 1 5D954501
 P 4900 3800
-F 0 "F1" V 5000 3700 50  0000 C CNN
+F 0 "F2" V 5000 3700 50  0000 C CNN
 F 1 "94°C" V 5000 3900 50  0000 C CNN
 F 2 "" V 4830 3800 50  0001 C CNN
 F 3 "~" H 4900 3800 50  0001 C CNN
@@ -369,7 +369,7 @@ Wire Wire Line
 Wire Wire Line
 	5050 3800 5200 3800
 Wire Wire Line
-	5200 3700 4750 3700
+	5200 3700 5050 3700
 Text Notes 7250 1900 0    50   ~ 0
 In direct mode without\npower 230V mode is default
 Text Notes 8450 4550 0    50   ~ 0
@@ -379,7 +379,7 @@ Toggle between\nsoft-start/off/direct\nmodes
 Text Notes 9870 4550 0    50   ~ 0
 Connect/disconnect\nprotective earth
 Text Notes 4950 4200 0    50   ~ 0
-Fuse TC-coupled to\nthe side of transformer
+Fuses TC-coupled to\nthe sides of transformer
 Text Notes 5700 5050 0    50   ~ 0
 Goes to Soft Start\nand Mode Selection
 $Comp
@@ -450,4 +450,15 @@ Wire Wire Line
 	8130 2750 9620 2750
 Connection ~ 9620 3450
 Connection ~ 9080 3650
+$Comp
+L Device:Fuse F1
+U 1 1 5D9FBBF9
+P 4900 3700
+F 0 "F1" V 4810 3600 50  0000 C CNN
+F 1 "94°C" V 4810 3800 50  0000 C CNN
+F 2 "" V 4830 3700 50  0001 C CNN
+F 3 "~" H 4900 3700 50  0001 C CNN
+	1    4900 3700
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC

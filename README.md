@@ -79,7 +79,7 @@ May in theory provide ~3 kVA output power if properly cooled.
 
 * `NE1`..`NE3` - 220V panel-mount neon indicators. Each one has an integrated 150K resistor. Bought a pack of 10 for under $2 from AliExpress.
 
-* `F1` - 94°C 16A thermal fuse attached to the side of `TR1`. Bought as a pack of 10 from AliExpress for under $4. Tested one from the batch on a water bath with a digital thermometer, fails at around 94°C as expected.
+* `F1`, `F2` - 94°C 16A thermal fuses attached to the sides of `TR1`. Bought as a pack of 10 from AliExpress for under $4. Tested one from the batch on a water bath with a digital thermometer, fails at around 94°C as expected.
 
 * `CB1` - 250V 15A resettable panel-mount circuit breaker. Bought for ~$2 from eBay.
 
@@ -107,7 +107,7 @@ All wires were crimped untinned with either spade connectors or ferrules to avoi
 
 2. When `SW1` is turned in **II** position direct mode is engaged and mains power is routed directly to `TR1`. `PS1` remains unpowered, relays `K1`..`K4` output power to `J12` (230V outlet) through their normally closed contacts. Depending on the input voltage `NE1` may or may not light up.
 
-3. When `SW1` is turned in **I** position soft-start mode is engaged and power is routed through the soft-start circuit to `TR1`. Both relays `K5` and `K6` remain off, effectively leaving `TR1` disconnected from mains.At the same time `PS1` starts powering both soft-start and 115V/230V mode selection circuit.
+3. When `SW1` is turned in **I** position soft-start mode is engaged and power is routed through the soft-start circuit to `TR1`. Both relays `K5` and `K6` remain off, effectively leaving `TR1` disconnected from mains. At the same time `PS1` starts powering both soft-start and 115V/230V mode selection circuit.
 
 4. `K2` in mode selection circuit is immediately activated, disconnecting `TR1` from any set of outputs (`J12`..`J14`). Mode selection logic is disabled.
 
@@ -119,9 +119,19 @@ All wires were crimped untinned with either spade connectors or ferrules to avoi
     * If `SW2` is on, 115V mode is selected. `K1`, `K3` and `K4` are activated in addition to already active `K2`. Outputs `J13` and `J14` become live, `NE2` and `NE3` light up.
     * if `SW2` is off, 230V mode is selected. `K2` is deactivated, output `J12` becomes live, `NE1` lights up.
 
-## Finished photos
+## Photos
 
-TODO
+Back panel close-up during final testing and assembly:
+![Back panel mid-assembly](Images/mid_assembly_1.jpg)
+
+Overall view before closing the enclosure:
+![Overall mid-assembly](Images/mid_assembly_2.jpg)
+
+Assembled front panel:
+![Front panel](Images/panel_front.jpg)
+
+Assembled back panel:
+![Back panel](Images/panel_back.jpg)
 
 ## Contributing
 
